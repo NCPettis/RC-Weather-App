@@ -30,8 +30,8 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=bc64d6b0e6d8470a84115522826
         document.querySelector('#feel').innerText = data.current.feelslike_f + "℉"
         let link = data.current.condition.icon
         let icon = "https:" + link
-        console.log(icon)
-        document.querySelector('#weatherIcon').src = icon
+        // console.log(icon)
+        document.querySelector('#weatherIcon').src = `${icon}`
         console.log(icon)
 
         
